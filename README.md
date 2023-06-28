@@ -1,6 +1,7 @@
 # Outfit Builder DOM Project
 The program will take input from user: name and favorite color (togggles layout's color) and choice of items and color (from selection): 
-- tops (short-sleeve, long-sleeve, and tank top); bottoms (pants, skirt, or shorts) 
+- tops (short-sleeve, long-sleeve, and tank top)
+- bottoms (pants, skirt, or shorts) 
 - shoes (sneakers, sandals, or boots)
 - if dress is selected => automatically skip tops and bottoms; 
 - add option for accessories 
@@ -13,5 +14,9 @@ HTML/CSS and JavaScript
 
 ## How to Use: page link
 (http://link.here/ “Page link”)
+
+## Credits
+- Using 2bit-UI for the changing color-scheme when selecting favorite color option.
+[2bit-UI]("https://2bit-ui.wavebeem.com/docs/")
 
 ## Bugs
