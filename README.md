@@ -17,6 +17,6 @@ HTML/CSS and JavaScript
 
 ## Credits
 - Using 2bit-UI for the changing color-scheme when selecting favorite color option.
-- [Duck Duck Go](https://duckduckgo.com "The best search engine for privacy").
+- [2Bit-UI](https://2bit-ui.wavebeem.com/).
 
 ## Bugs
