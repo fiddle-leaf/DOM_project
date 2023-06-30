@@ -1,0 +1,52 @@
+$bit: 1em   //relative unit
+$font: 'DM Sans', sans-serif
+
+body
+    box-sizing: border-box
+    paddng: 0
+    margin:0
+    padding-block: 0
+    margin-block: 0
+    padding-inline: 0
+    margin-inline: 0
+
+    font:
+        size: $bit
+        family: $font
+
+h1 
+    font: calc(2*$bit)
+
+h2
+    font: calc(1.8*$bit)
+
+h3
+    font: calc(1.6*$bit)
+
+h4
+    font: calc(1.4*$bit)
+
+h5
+    font: calc(1.2*$bit)
+
+h6
+    font: calc(0.8*$bit)
+
+.grid,
+div#color-radios>span
+    display: flex
+
+div.left,
+div.right
+    flex: 1
+    
+div#color-radios
+    flex: 1
+    display: grid
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr)
+
+    span
+        flex-flow: row nowrap
+
+
+

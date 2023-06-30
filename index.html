@@ -3,136 +3,151 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/styles/style.css">
-  <link rel="stylesheet" href="/styles/2bit-ui.css" />
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/2bit-ui.css" />
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <script defer src="/js/scripts.js"></script>
-  <title>Outfit of the Day!</title>
+  <title>Outfit of the Day!!</title>
 </head>
 <body>
-  <div class="left" id="ootd-display">
-    <header>
-      <h1>Outfit of the Day (OOTD)</h1>
-    </header>
-  </div>
-  <div class="right" id="ootd-input">
-    <h2>Pick your Outfit of the Day:</h2>
-    <form action="" id="ootd-form">
-      <div>
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name">
-      </div>
-      <div>
-        <p>Favorite color:</p>
-        <input type="radio" name="color1" id="red">
-        <label for="color1">Red</label>
-        <br/><input type="radio" name="color2" id="orange">
-        <label for="color2">Orange</label>
-        <br/><input type="radio" name="color3" id="yellow">
-        <label for="color3">Yellow</label>
-        <br/><input type="radio" name="color4" id="green">
-        <label for="color4">Green</label>
-        <br/><input type="radio" name="color5" id="blue">
-        <label for="color5">Blue</label>
-        <br/><input type="radio" name="color6" id="purple">
-        <label for="color1">Purple</label>
-        <br/><input type="radio" name="color7" id="pink">
-        <label for="color1">Pink</label>
-        <br/><input type="radio" name="color8" id="black">
-        <label for="color1">Black</label>
-      </div>
-      <div>
-        <h3>Top</h3>
+  <main id="container" class="bit-auto grid">
+    <div class="left" id="ootd-display">
+      <header>
+        <h1>Outfit of the Day (OOTD)</h1>
+      </header>
+    </div>
+    <div class="right" id="ootd-input">
+      <h2>Pick your Outfit of the Day:</h2>
+      <form action="" id="ootd-form">
         <div>
-          <input type="radio" name="shoes1" id="shoes1">
-          <label for="shoes1">Tank top</label>
-          <input type="radio" name="shoes2" id="shoes2">
-          <label for="shoes2">Short-sleeve top</label>
-          <input type="radio" name="shoes3" id="shoes3">
-          <label for="shoes3">Long-sleeve top</label>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div id="fav-colors">
+          <p>Favorite color:</p>
+          <div id="color-radios">
+            <span>
+              <input type="radio" name="color1" id="red"><label for="color1">Red</label>
+            </span>
+            <span>
+              <input type="radio" name="color2" id="orange"><label for="color2">Orange</label>
+            </span>
+            <span>
+              <input type="radio" name="color3" id="yellow"><label fors="color3">Yellow</label>
+            </span>
+            <span>
+              <input type="radio" name="color4" id="green"><label for="color4">Green</label>
+            </span>
+            <span>
+              <input type="radio" name="color5" id="blue"><label for="color5">Blue</label>
+            </span>
+            <span>
+              <input type="radio" name="color6" id="purple"><label for="color1">Purple</label>
+            </span>
+            <span>
+              <input type="radio" name="color7" id="pink"><label for="color1">Pink</label>
+            </span>
+            <span>
+              <input type="radio" name="color8" id="black"><label for="color1">Black</label>
+            </span>
+          </div>
         </div>
         <div>
-          <label for="top-color">Color for top:</label>
-          <select name="top-color" id="tops">
-            <option value="red">Red</option>
-            <option value="orange">Orange</option>
-            <option value="yellow">Yellow</option>
-            <option value="orange">Orange</option>
-            <option value="green">Green</option>
-            <option value="blue">Blue</option>
-            <option value="purple">purple</option>
-            <option value="pink">Pink</option>
-          </select>
-        </div>
-      </div>
-      <div>
-        <h3>Bottoms</h3>
-        <div>
-          <input type="radio" name="shoes1" id="shoes1">
-          <label for="shoes1">Pants</label>
-          <input type="radio" name="shoes2" id="shoes2">
-          <label for="shoes2">Shorts</label>
-          <input type="radio" name="shoes3" id="shoes3">
-          <label for="shoes3">Skirt</label>
-        </div>
-        <div>
-          <label for="shoes-color">Color for shoess:</label>
-          <select name="shoes-color" id="shoess">
-            <option value="red">Red</option>
-            <option value="orange">Orange</option>
-            <option value="yellow">Yellow</option>
-            <option value="orange">Orange</option>
-            <option value="green">Green</option>
-            <option value="blue">Blue</option>
-            <option value="purple">purple</option>
-            <option value="pink">Pink</option>
-          </select>
-        </div>
-      </div>
-      <div>
-        <h3>Shoes</h3>
-        <div>
-          <input type="radio" name="shoes1" id="shoes1">
-          <label for="shoes1">Sneakers</label>
-          <input type="radio" name="shoes2" id="shoes2">
-          <label for="shoes2">Sandals</label>
-          <input type="radio" name="shoes3" id="shoes3">
-          <label for="shoes3">Boots</label>
+          <h3>Top</h3>
+          <div>
+            <input type="radio" name="shoes1" id="shoes1">
+            <label for="shoes1">Tank top</label>
+            <input type="radio" name="shoes2" id="shoes2">
+            <label for="shoes2">Short-sleeve top</label>
+            <input type="radio" name="shoes3" id="shoes3">
+            <label for="shoes3">Long-sleeve top</label>
+          </div>
+          <div>
+            <label for="top-color">Color for top:</label>
+            <select name="top-color" id="tops">
+              <option value="red">Red</option>
+              <option value="orange">Orange</option>
+              <option value="yellow">Yellow</option>
+              <option value="orange">Orange</option>
+              <option value="green">Green</option>
+              <option value="blue">Blue</option>
+              <option value="purple">purple</option>
+              <option value="pink">Pink</option>
+            </select>
+          </div>
         </div>
         <div>
-          <label for="shoes-color">Color for shoes:</label>
-          <select name="shoes-color" id="shoes">
-            <option value="red">Red</option>
-            <option value="orange">Orange</option>
-            <option value="yellow">Yellow</option>
-            <option value="orange">Orange</option>
-            <option value="green">Green</option>
-            <option value="blue">Blue</option>
-            <option value="purple">purple</option>
-            <option value="pink">Pink</option>
-          </select>
+          <h3>Bottoms</h3>
+          <div>
+            <input type="radio" name="shoes1" id="shoes1">
+            <label for="shoes1">Pants</label>
+            <input type="radio" name="shoes2" id="shoes2">
+            <label for="shoes2">Shorts</label>
+            <input type="radio" name="shoes3" id="shoes3">
+            <label for="shoes3">Skirt</label>
+          </div>
+          <div>
+            <label for="shoes-color">Color for shoess:</label>
+            <select name="shoes-color" id="shoess">
+              <option value="red">Red</option>
+              <option value="orange">Orange</option>
+              <option value="yellow">Yellow</option>
+              <option value="orange">Orange</option>
+              <option value="green">Green</option>
+              <option value="blue">Blue</option>
+              <option value="purple">purple</option>
+              <option value="pink">Pink</option>
+            </select>
+          </div>
         </div>
-      </div>
-      <div>
-        <h3>Accesories?</h3>
         <div>
-          <input type="radio" name="choice1" id="choice1">
-          <label for="choice1">Yes</label>
-          <input type="radio" name="choice2" id="choice2">
-          <label for="choice">No</label>
+          <h3>Shoes</h3>
+          <div>
+            <input type="radio" name="shoes1" id="shoes1">
+            <label for="shoes1">Sneakers</label>
+            <input type="radio" name="shoes2" id="shoes2">
+            <label for="shoes2">Sandals</label>
+            <input type="radio" name="shoes3" id="shoes3">
+            <label for="shoes3">Boots</label>
+          </div>
+          <div>
+            <label for="shoes-color">Color for shoes:</label>
+            <select name="shoes-color" id="shoes">
+              <option value="red">Red</option>
+              <option value="orange">Orange</option>
+              <option value="yellow">Yellow</option>
+              <option value="orange">Orange</option>
+              <option value="green">Green</option>
+              <option value="blue">Blue</option>
+              <option value="purple">purple</option>
+              <option value="pink">Pink</option>
+            </select>
+          </div>
         </div>
         <div>
-          <label for="accesory-type">Type:</label>
-          <select name="accesory-type" id="accesories">
-            <option value="necklace">Necklace</option>
-            <option value="earrings">Earrings</option>
-            <option value="watch">Watch</option>
-            <option value="bracelet">Bracelet</option>
-            <option value="headphones">Headphones</option>
-          </select>
+          <h3>Accesories?</h3>
+          <div>
+            <input type="radio" name="choice1" id="choice1">
+            <label for="choice1">Yes</label>
+            <input type="radio" name="choice2" id="choice2">
+            <label for="choice">No</label>
+          </div>
+          <div>
+            <label for="accesory-type">Type:</label>
+            <select name="accesory-type" id="accesories">
+              <option value="necklace">Necklace</option>
+              <option value="earrings">Earrings</option>
+              <option value="watch">Watch</option>
+              <option value="bracelet">Bracelet</option>
+              <option value="headphones">Headphones</option>
+            </select>
+          </div>
         </div>
-      </div>
-    </form>
-  </div>
-  
+      </form>
+    </div>
+  </main>
 </body>
 </html>
