@@ -16,7 +16,8 @@ HTML/CSS and JavaScript
 
 
 ## Credits
-- Using 2bit-UI for the changing color-scheme when selecting favorite color option.
-- [2Bit-UI](https://2bit-ui.wavebeem.com/).
+- [2Bit-UI](https://2bit-ui.wavebeem.com/) for the color-scheme and overall UI design
+- [normalize](https://github.com/necolas/normalize.css) for consistent formatting
+
 
 ## Bugs
