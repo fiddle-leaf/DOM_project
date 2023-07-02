@@ -7,51 +7,66 @@ body {
   padding-inline: 0;
   margin-inline: 0;
   font-size: 1em;
-  font-family: "DM Sans", sans-serif; }
+  font-family: "DM Sans", sans-serif;
+}
 
 h1 {
-  font: calc(2*$bit); }
+  font: 2em;
+}
 
 h2 {
-  font: calc(1.8*$bit); }
+  font: 1.8em;
+}
 
 h3 {
-  font: calc(1.6*$bit); }
+  font: 1.6em;
+}
 
 h4 {
-  font: calc(1.4*$bit); }
+  font: 1.4em;
+}
 
 h5 {
-  font: calc(1.2*$bit); }
+  font: 1.2em;
+}
 
 h6 {
-  font: calc(0.8*$bit); }
+  font: 0.8em;
+}
 
 .grid {
-  display: flex; }
+  display: flex;
+}
 
-div.left,
+main#container {
+  justify-content: center;
+}
+
+div.left {
+  flex: 0 25%;
+}
+
 div.right {
-  flex: 1; }
+  flex: 0 50%;
+}
 
 div#color-radios {
   flex: 1;
   display: grid;
   grid-template: repeat(2, 1fr)/repeat(4, 1fr);
-  gap: 10px; }
+  gap: 10px;
+}
 
-div.labels input {
-  width: 10px; }
+div#options {
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+}
 
 div.tops,
 div.bottoms,
 div.shoes,
 div.accesories {
-  flex-flow: row nowrap; }
-  div.tops div,
-  div.bottoms div,
-  div.shoes div,
-  div.accesories div {
-    flex: 1; }
+  flex-flow: column nowrap;
+}
 
 /*# sourceMappingURL=style.css.map */

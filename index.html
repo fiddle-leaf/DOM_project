@@ -9,11 +9,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-  <script defer src="/js/scripts.js"></script>
+  <script defer src="./js/scripts.js"></script>
   <title>Outfit of the Day!!</title>
 </head>
 <body>
-  <main id="container" class="bit-auto grid">
+  <main id="container" class="grid">
     <div class="left" id="ootd-display">
       <header>
         <h1>Outfit of the Day (OOTD)</h1>
@@ -21,145 +21,154 @@
     </div>
     <div class="right" id="ootd-input">
       <h2>Pick your Outfit of the Day</h2>
-      <form action="" id="ootd-form">
-        <div>
-          <label for="name">Name:</label>
-          <input type="text" name="name" id="name">
+      <form id="ootd-form">
+        <div class="grid">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div class="grid">
+            <button type="button" id="light-mode">light mode</button>
+            <button type="button" id="dark-mode">dark mode</button>
+          </div>
         </div>
         <div id="fav-colors">
           <h4>Favorite color:</h4>
           <div id="color-radios">
-            <div class="grid labels">
+            <div class="grid">
               <input type="radio" name="color1" id="red"><label for="color1">Red</label>
             </div>
-            <div class="grid labels">
+            <div class="grid">
               <input type="radio" name="color2" id="orange"><label for="color2">Orange</label>
             </div>
-            <div class="grid labels">
+            <div class="grid">
               <input type="radio" name="color3" id="yellow"><label fors="color3">Yellow</label>
             </div>
-            <div class="grid labels">
+            <div class="grid">
               <input type="radio" name="color4" id="green"><label for="color4">Green</label>
             </div>
-            <div class="grid labels"> 
+            <div class="grid"> 
               <input type="radio" name="color5" id="blue"><label for="color5">Blue</label>
             </div>
-            <div class="grid labels">
+            <div class="grid">
               <input type="radio" name="color6" id="purple"><label for="color1">Purple</label>
             </div>
-            <div class="grid labels">
+            <div class="grid">
               <input type="radio" name="color7" id="pink"><label for="color1">Pink</label>
             </div>
-            <div class="grid labels">
+            <div class="grid">
               <input type="radio" name="color8" id="black"><label for="color1">Black</label>
             </div>
           </div>
         </div>
-        <div>
-          <h3>Top</h3>
-          <div class="grid tops">
-            <div>
-              <div class="grid labels">
-                <input type="radio" name="shoes1" id="shoes1"><label for="shoes1">Tank top</label>
+        <div id="options">
+          <div>
+            <h3>Top</h3>
+            <div class="grid tops">
+              <div>
+                <div class="grid">
+                  <input type="radio" name="top1" id="top1"><label for="top1">Tank top</label>
+                </div>
+                <div class="grid">
+                  <input type="radio" name="top2" id="top2"><label for="top2">Short-sleeve top</label>
+                </div>
+                <div class="grid">
+                  <input type="radio" name="top3" id="top3"><label for="top3">Long-sleeve top</label>
+                </div>
+                <div class="grid">
+                  <input type="radio" name="top4" id="top4"><label for="top4">Dress</label>
+                </div>
               </div>
-              <div class="grid labels">
-                <input type="radio" name="shoes2" id="shoes2"><label for="shoes2">Short-sleeve top</label>
+              <div>
+                <label for="top-color">Color:</label>
+                <select name="top-color" id="tops">
+                  <option value="red">Red</option>
+                  <option value="orange">Orange</option>
+                  <option value="yellow">Yellow</option>
+                  <option value="orange">Orange</option>
+                  <option value="green">Green</option>
+                  <option value="blue">Blue</option>
+                  <option value="purple">purple</option>
+                  <option value="pink">Pink</option>
+                </select>
               </div>
-              <div class="grid labels">
-                <input type="radio" name="shoes3" id="shoes3"><label for="shoes3">Long-sleeve top</label>
-              </div>
-            </div>
-            <div>
-              <label for="top-color">Color:</label>
-              <select name="top-color" id="tops">
-                <option value="red">Red</option>
-                <option value="orange">Orange</option>
-                <option value="yellow">Yellow</option>
-                <option value="orange">Orange</option>
-                <option value="green">Green</option>
-                <option value="blue">Blue</option>
-                <option value="purple">purple</option>
-                <option value="pink">Pink</option>
-              </select>
             </div>
           </div>
-        </div>
-        <div>
-          <h3>Bottoms</h3>
-          <div class="grid bottoms">
-            <div>
-              <div class="grid labels">
-                <input type="radio" name="shoes1" id="shoes1"><label for="shoes1">Pants</label>
+          <div>
+            <h3>Bottoms</h3>
+            <div class="grid bottoms">
+              <div>
+                <div class="grid">
+                  <input type="radio" name="bottoms1" id="bottoms1"><label for="bottoms1">Pants</label>
+                </div>
+                <div class="grid">
+                  <input type="radio" name="bottoms2" id="bottoms2"><label for="bottoms2">Shorts</label>
+                </div>
+                <div class="grid">
+                  <input type="radio" name="bottoms3" id="bottoms3"><label for="bottoms3">Skirt</label></div>
+                <label for="bottom-color">Color:</label>
+                <select name="bottom-color" id="bottoms">
+                  <option value="red">Red</option>
+                  <option value="orange">Orange</option>
+                  <option value="yellow">Yellow</option>
+                  <option value="orange">Orange</option>
+                  <option value="green">Green</option>
+                  <option value="blue">Blue</option>
+                  <option value="purple">purple</option>
+                  <option value="pink">Pink</option>
+                </select>
               </div>
-              <div class="grid labels">
-                <input type="radio" name="shoes2" id="shoes2"><label for="shoes2">Shorts</label>
-              </div>
-              <div class="grid labels">
-                <input type="radio" name="shoes3" id="shoes3"><label for="shoes3">Skirt</label></div>
-            </div>
-            <div>
-              <label for="shoes-color">Color:</label>
-              <select name="shoes-color" id="shoess">
-                <option value="red">Red</option>
-                <option value="orange">Orange</option>
-                <option value="yellow">Yellow</option>
-                <option value="orange">Orange</option>
-                <option value="green">Green</option>
-                <option value="blue">Blue</option>
-                <option value="purple">purple</option>
-                <option value="pink">Pink</option>
-              </select>
             </div>
           </div>
-        </div>
-        <div>
-          <h3>Shoes</h3>
-          <div class="grid shoes">
-            <div>
-              <div class="grid labels">
-                <input type="radio" name="shoes1" id="shoes1"><label for="shoes1">Sneakers</label>
+          <div>
+            <h3>Shoes</h3>
+            <div class="grid shoes">
+              <div>
+                <div class="grid">
+                  <input type="radio" name="shoes1" id="shoes1"><label for="shoes1">Sneakers</label>
+                </div>
+                <div class="grid">
+                  <input type="radio" name="shoes2" id="shoes2"><label for="shoes2">Sandals</label>
+                </div>
+                <div class="grid">
+                  <input type="radio" name="shoes3" id="shoes3"><label for="shoes3">Boots</label>
+                </div>
+                <label for="shoes-color">Color:</label>
+                <select name="shoes-color" id="shoes">
+                  <option value="red">Red</option>
+                  <option value="orange">Orange</option>
+                  <option value="yellow">Yellow</option>
+                  <option value="orange">Orange</option>
+                  <option value="green">Green</option>
+                  <option value="blue">Blue</option>
+                  <option value="purple">purple</option>
+                  <option value="pink">Pink</option>
+                </select>
               </div>
-              <div class="grid labels">
-                <input type="radio" name="shoes2" id="shoes2"><label for="shoes2">Sandals</label>
-              </div>
-              <div class="grid labels">
-                <input type="radio" name="shoes3" id="shoes3"><label for="shoes3">Boots</label>
-              </div>
-            </div>
-            <div>
-              <label for="shoes-color">Color:</label>
-              <select name="shoes-color" id="shoes">
-                <option value="red">Red</option>
-                <option value="orange">Orange</option>
-                <option value="yellow">Yellow</option>
-                <option value="orange">Orange</option>
-                <option value="green">Green</option>
-                <option value="blue">Blue</option>
-                <option value="purple">purple</option>
-                <option value="pink">Pink</option>
-              </select>
             </div>
           </div>
-        </div>
-        <div>
-          <h3>Accesories?</h3>
-          <div class="grid accesories">
-            <div>
-              <input type="radio" name="choice1" id="choice1">
-              <label for="choice1">Yes</label>
-              <input type="radio" name="choice2" id="choice2">
-              <label for="choice">No</label>
+          <div>
+            <h3>Accesories?</h3>
+            <div class="grid accesories">
+              <div>
+                <input type="radio" name="choice1" id="choice1">
+                <label for="choice1">Yes</label>
+                <input type="radio" name="choice2" id="choice2">
+                <label for="choice">No</label>
+                <label for="accesory-type">Type:</label>
+                <select name="accesory-type" id="accesories">
+                  <option value="necklace">Necklace</option>
+                  <option value="earrings">Earrings</option>
+                  <option value="watch">Watch</option>
+                  <option value="bracelet">Bracelet</option>
+                  <option value="headphones">Headphones</option>
+                </select>
+              </div>
             </div>
-            <div>
-              <label for="accesory-type">Type:</label>
-              <select name="accesory-type" id="accesories">
-                <option value="necklace">Necklace</option>
-                <option value="earrings">Earrings</option>
-                <option value="watch">Watch</option>
-                <option value="bracelet">Bracelet</option>
-                <option value="headphones">Headphones</option>
-              </select>
-            </div>
+          </div>
+          <div class="grid">
+            <button type="reset">clear</button>
+            <button type="submit">submit</button>
           </div>
         </div>
       </form>

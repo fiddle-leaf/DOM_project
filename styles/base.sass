@@ -35,9 +35,13 @@ h6
 .grid
     display: flex
 
-div.left,
+main#container
+    justify-content: center
+
+div.left
+    flex: 0 25%
 div.right
-    flex: 1
+    flex: 0 50%
     
 div#color-radios
     flex: 1
@@ -45,17 +49,14 @@ div#color-radios
     grid-template: repeat(2, 1fr) / repeat(4, 1fr)
     gap: 10px
 
-div.labels 
-    input
-        width: 10px
+div#options
+    display: grid
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr)
 
 div.tops,
 div.bottoms,
 div.shoes,
 div.accesories
-    flex-flow: row nowrap
+    flex-flow: column nowrap
     
-    div
-        flex: 1
-
 
