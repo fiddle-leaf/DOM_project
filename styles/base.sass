@@ -3,8 +3,8 @@ $font: 'DM Sans', sans-serif
 
 body
     box-sizing: border-box
-    paddng: 0
-    margin:0
+    padding: 0
+    margin: 0
     padding-block: 0
     margin-block: 0
     padding-inline: 0
@@ -32,8 +32,7 @@ h5
 h6
     font: calc(0.8*$bit)
 
-.grid,
-div#color-radios>span
+.grid
     display: flex
 
 div.left,
@@ -44,9 +43,19 @@ div#color-radios
     flex: 1
     display: grid
     grid-template: repeat(2, 1fr) / repeat(4, 1fr)
+    gap: 10px
 
-    span
-        flex-flow: row nowrap
+div.labels 
+    input
+        width: 10px
 
+div.tops,
+div.bottoms,
+div.shoes,
+div.accesories
+    flex-flow: row nowrap
+    
+    div
+        flex: 1
 
 
