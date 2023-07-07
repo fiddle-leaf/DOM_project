@@ -7,76 +7,62 @@ body {
   padding-inline: 0;
   margin-inline: 0;
   font-size: 1em;
-  font-family: "DM Sans", sans-serif;
-}
+  font-family: "DM Sans", sans-serif; }
 
 h1 {
-  font: 2em;
-}
+  font: calc(2*$bit); }
 
 h2 {
-  font: 1.8em;
-}
+  font: calc(1.8*$bit); }
 
 h3 {
-  font: 1.6em;
-}
+  font: calc(1.6*$bit); }
 
 h4 {
-  font: 1.4em;
-}
+  font: calc(1.4*$bit); }
 
 h5 {
-  font: 1.2em;
-}
+  font: calc(1.2*$bit); }
 
 h6 {
-  font: 0.8em;
-}
+  font: calc(0.8*$bit); }
 
 .grid {
-  display: flex;
-}
+  display: flex; }
 
 main#container {
-  justify-content: center;
-}
-
-div.left {
-  flex: 0 25%;
-}
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
 
 div.right {
-  flex: 0 50%;
-}
+  grid-column-end: span 2; }
+
+header h1 {
+  text-align: center; }
 
 div#color-radios {
   flex: 1;
   display: grid;
   grid-template: repeat(2, 1fr)/repeat(4, 1fr);
-  gap: 10px;
-}
+  gap: 10px; }
 
 div#options {
   display: grid;
-  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
-}
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr); }
 
 div.tops,
 div.bottoms,
 div.shoes,
 div.accesories {
-  flex-flow: column nowrap;
-}
+  flex-flow: column nowrap; }
 
 .light {
   background: #fff;
-  color: #000;
-}
+  color: #000; }
 
 .dark {
   background: #000;
-  color: #fff;
-}
+  color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

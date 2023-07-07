@@ -36,12 +36,19 @@ h6
     display: flex
 
 main#container
-    justify-content: center
+    height: 100vh
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
 
 div.left
-    flex: 0 25%
+    //background: #fff
+
 div.right
-    flex: 0 50%
+    grid-column-end: span 2
+
+header
+    h1
+        text-align: center
     
 div#color-radios
     flex: 1
@@ -63,6 +70,10 @@ div.accesories
 .light
     background: #fff
     color: #000
+    //background: #ffdadc
+    //color: #ac0a14
+    //color: #c50f19
+    //color: #fa1f31
 
 .dark
     background: #000

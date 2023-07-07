@@ -15,24 +15,32 @@ const User = (name) => {
 const lightMode = bodyEl.querySelector("#light-mode");
 const darkMode = bodyEl.querySelector("#dark-mode");
 
-console.log(lightMode);
-console.log(darkMode);
+//console.log(lightMode);
+//console.log(darkMode);
 
 const changeTheme = (mode) => {
 
-    if (mode == "light") {
+    switch (mode) {
+        case "light": {
         bodyEl.classList.contains("dark") ?
         (bodyEl.classList.remove("dark"),
-        bodyEl.classList.add("light") ):
-        bodyEl.classList.add("light");
-    } else if (mode == "dark") {
+        bodyEl.classList.add(mode) ):
+        bodyEl.classList.add(mode);
+        break;
+    };
+        case "dark": {
         bodyEl.classList.contains("light") ?
         (bodyEl.classList.remove("light"), 
-        bodyEl.classList.add("dark")) :
-        bodyEl.classList.add("dark");
-    }
+        bodyEl.classList.add(mode)) :
+        bodyEl.classList.add(mode);
+        break;
+    };
+}
 }
 
+/**
+ * changing between dark/light modes
+ */
 lightMode.addEventListener("click", (event) => {
     event.preventDefault;
 
@@ -52,3 +60,20 @@ darkMode.addEventListener("click", (event) => {
         changeTheme("dark");
     }
 });
+
+/**
+ * Class for Layout colors
+ */
+let colorPick = []
+colorPick = bodyEl.querySelector("#color-radios").getElementsByClassName("grid");
+
+console.log(colorPick);
+
+for (color in colorPick) {
+    console.log(color);
+}
+
+
+const colorTheme = (color) => {
+    return Object.assign
+}
