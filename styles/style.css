@@ -38,9 +38,6 @@ main#container {
 div.right {
   grid-column-end: span 2; }
 
-header h1 {
-  text-align: center; }
-
 div#color-radios {
   flex: 1;
   display: grid;

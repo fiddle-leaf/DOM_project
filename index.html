@@ -13,11 +13,12 @@
   <title>Outfit of the Day!!</title>
 </head>
 <body>
-  <main id="container" class="grid">
+  <header>
+    <h1>Outfit of the Day (OOTD)</h1>
+  </header>
+  <main id="container">
     <div class="left" id="ootd-display">
-      <header class="grid">
-        <h1>Outfit of the Day (OOTD)</h1>
-      </header>
+      <div class="output"></div>
     </div>
     <div class="right" id="ootd-input">
       <h2>Pick your Outfit of the Day</h2>
@@ -25,39 +26,40 @@
         <div class="grid">
           <div>
             <label for="name">Name:</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" required>
           </div>
-          <div class="grid">
-            <button type="button" id="light-mode">light mode</button>
-            <button type="button" id="dark-mode">dark mode</button>
-          </div>
+          <button type="button" id="save">Save</button>
+        </div>
+        <div class="grid">
+          <button type="button" id="light-mode">light mode</button>
+          <button type="button" id="dark-mode">dark mode</button>
         </div>
         <div id="fav-colors">
-          <h4>Favorite color:</h4>
+          <h4>Color theme:</h4>
           <div id="color-radios">
             <div class="grid">
-              <input type="radio" name="color1" id="red"><label for="color1">Red</label>
+              <input type="radio" name="color" id="red"><label for="color1">Red</label>
             </div>
             <div class="grid">
-              <input type="radio" name="color2" id="orange"><label for="color2">Orange</label>
+              <input type="radio" name="color" id="orange"><label for="color2">Orange</label>
             </div>
             <div class="grid">
-              <input type="radio" name="color3" id="yellow"><label fors="color3">Yellow</label>
+              <input type="radio" name="color" id="yellow"><label fors="color3">Yellow</label>
             </div>
             <div class="grid">
-              <input type="radio" name="color4" id="green"><label for="color4">Green</label>
+              <input type="radio" name="color" id="green"><label for="color4">Green</label>
             </div>
             <div class="grid"> 
-              <input type="radio" name="color5" id="blue"><label for="color5">Blue</label>
+              <input type="radio" name="color" id="blue"><label for="color5">Blue</label>
             </div>
             <div class="grid">
-              <input type="radio" name="color6" id="purple"><label for="color1">Purple</label>
+              <input type="radio" name="color" id="purple"><label for="color1">Purple</label>
             </div>
             <div class="grid">
-              <input type="radio" name="color7" id="pink"><label for="color1">Pink</label>
+              <input type="radio" name="color" id="pink"><label for="color1">Pink</label>
             </div>
             <div class="grid">
-              <input type="radio" name="color8" id="black"><label for="color1">Black</label>
+              <input type="radio" name="color" id="black"><label for="color1">Black</label>
             </div>
           </div>
         </div>
