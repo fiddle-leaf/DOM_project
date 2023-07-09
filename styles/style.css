@@ -8,6 +8,9 @@ body {
   margin-inline: 0;
   font-size: 1em;
   font-family: "DM Sans", sans-serif; }
+  body img {
+    width: 100%;
+    height: auto; }
 
 h1 {
   font: calc(2*$bit); }
@@ -53,13 +56,5 @@ div.bottoms,
 div.shoes,
 div.accesories {
   flex-flow: column nowrap; }
-
-.light {
-  background: #fff;
-  color: #000; }
-
-.dark {
-  background: #000;
-  color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
