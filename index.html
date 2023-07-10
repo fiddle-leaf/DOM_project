@@ -23,14 +23,9 @@
     <div class="right" id="ootd-input">
       <h2>Pick your Outfit of the Day</h2>
       <form id="ootd-form">
-        <div class="grid">
-          <div>
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" required>
-          </div>
-          <button type="button" id="save">Save</button>
-        </div>
-        <div class="grid">
+        <div class="grid intro">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required>
           <button type="button" id="light-mode">light mode</button>
           <button type="button" id="dark-mode">dark mode</button>
         </div>
@@ -69,13 +64,13 @@
             <div class="grid tops">
               <div>
                 <div class="grid">
-                  <input type="radio" name="tops" id="tank"><label for="tank">Tank top</label>
+                  <input type="radio" name="tops" id="tank-top"><label for="tank-top">Tank top</label>
                 </div>
                 <div class="grid">
-                  <input type="radio" name="tops" id="shortSleeve"><label for="shortSleeve">Short-sleeve top</label>
+                  <input type="radio" name="tops" id="short-sleeve"><label for="short-sleeve">Short-sleeve top</label>
                 </div>
                 <div class="grid">
-                  <input type="radio" name="tops" id="longSleeve"><label for="longSleeve">Long-sleeve top</label>
+                  <input type="radio" name="tops" id="long-sleeve"><label for="long-sleeve">Long-sleeve top</label>
                 </div>
                 <div class="grid">
                   <input type="radio" name="tops" id="dress"><label for="dress">Dress</label>
@@ -130,7 +125,7 @@
                   <input type="radio" name="shoes" id="sneakers"><label for="sneakers">Sneakers</label>
                 </div>
                 <div class="grid">
-                  <input type="radio" name="shoes" id="Sandals"><label for="Sandals">Sandals</label>
+                  <input type="radio" name="shoes" id="sandals"><label for="aandals">Sandals</label>
                 </div>
                 <div class="grid">
                   <input type="radio" name="shoes" id="boots"><label for="boots">Boots</label>
@@ -153,26 +148,31 @@
             <h3>Accesories?</h3>
             <div class="grid accesories">
               <div>
-                <input type="radio" name="choice1" id="choice1">
-                <label for="choice1">Yes</label>
-                <input type="radio" name="choice2" id="choice2">
-                <label for="choice">No</label>
-                <label for="accesory-type">Type:</label>
-                <select name="accesory-type" id="accesories">
-                  <option value="earrings">Earrings</option>
-                  <option value="belt">Belt</option>
-                  <option value="purse">Purse</option>
-                </select>
+                <div class="grid">
+                  <input type="radio" name="accs" id="belt"><label for="belt">Belt</label>
+                </div>
+                <div class="grid">
+                  <input type="radio" name="accs" id="earrings"><label for="earrings">Earrings</label>
+                </div>
+                <div class="grid">
+                  <input type="radio" name="accs" id="purse"><label for="purse">Purse</label>
+                </div>
+                <div class="grid">
+                  <input type="radio" name="accs" id="socks"><label for="socks">Socks</label>
+                </div>
               </div>
             </div>
           </div>
-          <div class="grid">
+          <div class="grid outro">
             <button type="reset">clear</button>
-            <button type="submit">submit</button>
+            <button type="submit">view</button>
           </div>
         </div>
       </form>
     </div>
   </main>
+  <footer>
+    <p class="copyright">fiddle-leaf &copy; 2023.</p>
+  </footer>
 </body>
 </html>

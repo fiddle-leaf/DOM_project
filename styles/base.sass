@@ -9,6 +9,9 @@ body
     margin-block: 0
     padding-inline: 0
     margin-inline: 0
+    max-height: 100vh
+    flex-flow: column nowrap
+
 
     font:
         size: $bit
@@ -36,14 +39,23 @@ h5
 h6
     font: calc(0.8*$bit)
 
+body, 
 .grid
     display: flex
 
 main#container
-    height: 100vh
+    flex: 1
     display: grid
     grid-template-columns: repeat(3, 1fr)
 
+main#container,
+div.intro,
+div.outro
+    gap: $bit
+
+header,
+footer
+    flex: 0
 
 div.right
     grid-column-end: span 2
@@ -58,6 +70,8 @@ div#color-radios
 div#options
     display: grid
     grid-template: repeat(2, 1fr) / repeat(2, 1fr)
+    padding: calc($bit/2)
+    gap: calc($bit/2)
 
 div.tops,
 div.bottoms,
@@ -65,3 +79,6 @@ div.shoes,
 div.accesories
     flex-flow: column nowrap
 
+p.copyright,
+div.output>h3
+    text-align: center
