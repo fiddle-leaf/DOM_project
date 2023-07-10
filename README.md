@@ -16,8 +16,9 @@ HTML/CSS and JavaScript
 
 
 ## Credits
-- [2Bit-UI](https://2bit-ui.wavebeem.com/) for the color-scheme and overall UI design
 - [normalize](https://github.com/necolas/normalize.css) for consistent formatting
 
-
 ## Bugs
+- stop propagation of multiple items in the same catergory when changing selection (items get added into array)
+- changing the item color from selection (maybe implement another type of graphic like unicode or add css filter property)
+- add message for requiring User's name before submitting
